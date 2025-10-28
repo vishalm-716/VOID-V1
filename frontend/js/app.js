@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'https://void-v1.onrender.com/api';
 let currentWalletData = null;
 
 console.log('🚀 App.js loading...');
