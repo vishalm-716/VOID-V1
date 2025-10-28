@@ -1,4 +1,11 @@
 const API_BASE_URL = 'https://void-v1.onrender.com/api';
+// Auto wake-up backend on page load
+console.log('🚀 Waking up backend...');
+fetch(API_BASE_URL.replace('/api', '/health'))
+    .then(res => res.json())
+    .then(data => console.log('✅ Backend ready:', data))
+    .catch(err => console.log('⏳ Backend starting up...', err));
+
 let currentWalletData = null;
 
 console.log('🚀 App.js loading...');
