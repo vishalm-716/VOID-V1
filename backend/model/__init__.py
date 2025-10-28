@@ -1,4 +1,4 @@
-from .blockchain_api import BlockchainAPI
-from .graph_builder import GraphBuilder
+from .wallet_classifier import WalletClassifier
+from .transaction_classifier import TransactionAnalyzer
 
-__all__ = ['BlockchainAPI', 'GraphBuilder']
+__all__ = ['WalletClassifier', 'TransactionAnalyzer']
